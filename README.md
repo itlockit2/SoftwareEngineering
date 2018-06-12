@@ -27,5 +27,20 @@ CHAPTER 9. 테스팅(Testing)
   - 리그레션 테스팅(Regression Testing) : 시스템이 설치되고 유지보수 단계에서 이루어지는 테스팅
   - 전수 테스팅(Exhaust Testing) : 테스트 케이스가 모든 가능한 에러를 다 검출 할수 있는 이상적인 집합(비현실적이고 불가능하다)
   ![Alt text](/1.jpg)
-### 9.1.4.테스트 케이스
+### 9.1.4.테스트 케이스(Test Case)
 테스트 케이스에는 테스크 대상별로 테스트조건, 테스트데이터 예상결과가 일반적으로 포함되어있다.
+  ![Alt text](/2.jpg)
+## 9.2 블랙박스 테스팅(Blockbox Testing)
+시스템이나 모듈 요구 명세서를 토대로 기능테스팅(Functional Testing)을 하는것으로
+명세서를 기반으로 하기 때문에 Spec-Based Test 라고도 한다. 
+또한 코드 내용을 고려하지 않기 때문에 Black Box Test라고 하며
+입력에 따른 올바른 행동을 검사하므로 행동적 테스트(Behavioral Test)라고 한다.
+### 9.2.1. 동치 클래스 분해(Equivalence Class Partitioning)
+전수 테스팅을 하는것은 비효율적이므로 입력값의 영역을 동치클래스로 나누고
+프로그램이 어떤 값에 대하여 올바로 실행된다면 그 값이 속하는 클래스에 있는
+모든 값에 대하여 올바로 실행될것이라고 간주한다.
+### 9.2.2. 경계값 분석(Boundary value analysis)
+동치클래스의 경계에 있는 값에서 이상이 생기는지 분석하는 단계
+ex) 정수의 범위가 MIN에서 MAX라고 할때
+MIN-1, MIN, MIN+1, MAX-1, MAX, MAX+1, Normal value
+즉 변수의 개수에 따라 6N+1개의 테스트케이스를 가진다.
