@@ -61,6 +61,7 @@ MIN-1, MIN, MIN+1, MAX-1, MAX, MAX+1, Normal value
  3. '출금액 오류'라고 인쇄
  4. 트랜젝션 금액 입금
  5. 트랜젝션 금액 
+ 
    ![Alt text](/3.jpg)
    ![Alt text](/4.jpg)
 ## 9.3 화이트박스 테스팅(WhiteBox Testing)
